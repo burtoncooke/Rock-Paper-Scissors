@@ -7,13 +7,45 @@
   </head>
   <body>
 
-    <h1>Hi</h1>
+    <h1>Rock, Paper, Scissors!</h1>
 
-    <button class="move">Rock</button>
-    <button class="move">Paper</button>
-    <button class="move">Scissors</button>
+
+    <form id="timer">
+      Minutes:<br>
+      <input type="text" name="minutes">
+      <br>
+      Seconds:<br>
+      <input type="text" name="seconds">
+      <br><br>
+      <input type="submit" value="Start!">
+    </form>
+
+    <div class="timeleft">
+      <h1>0 : 00</h1> 
+    </div>
+
+    <button class="move" disabled>Rock</button>
+    <button class="move" disabled>Paper</button>
+    <button class="move" disabled>Scissors</button>
+
+    <div class="humanmove"></div>
+    <div class="botmove"></div> 
+    <div class="result"></div>
+    <div class="score">
+      <h3 id="wins">Wins: 0</h3>
+      <h3 id="losses">Losses: 0</h3> 
+      <h3 id="draws">Draws: 0</h3>
+    </div>
+    <script src="./lib/timer.js"></script> 
     <script src="./lib/game.js"></script> 
     <script src="./lib/human-player.js"></script> 
     <script src="./lib/bot-player.js"></script> 
+
   </body>
 </html>
+
+
+
+
+
+
